@@ -1,3 +1,5 @@
+# SCCM4910 (DevOps) lab project - A simple four operation calculator :)
+
 def add(a, b):
 	return a + b
 
