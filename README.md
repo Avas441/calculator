@@ -17,3 +17,7 @@ From week 3 using the command: python3 calculator.py
 Enter the first number, then operation and then the second number
 the program will output the resut in the terminal
 
+##V1 progress
+
+### 22/10/2026
+As of thursday the program can now be looped and accept user input for two numbers and preform 4 operations
