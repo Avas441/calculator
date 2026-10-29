@@ -21,3 +21,6 @@ the program will output the resut in the terminal
 
 ### 22/10/2026
 As of thursday the program can now be looped and accept user input for two numbers and preform 4 operations
+
+##V2
+The program uses the run shell script to be automatically ran and uses python 3 for its main running
