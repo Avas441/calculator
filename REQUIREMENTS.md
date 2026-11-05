@@ -7,6 +7,10 @@
 5. Division
 6. Output result
 
+## Dependecny
+python 3
+pytest 9
+SCCM4910 venv
 ## Expected result
 The exected result of the app is that is should be able to output the correct number such as 2 + 2 with the reuslt beinf 4
 
