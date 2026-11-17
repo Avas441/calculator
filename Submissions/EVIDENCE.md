@@ -16,16 +16,70 @@ submit the final CI run as a separate PDF or screenshot.
 
 ## 1. Starting point and Git review
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+- Starting commit: 
+    "commit ed8ad938847cde4bae737fe7c245d7890ab51543"
+- Reused lab files, tests and examples: 
+    calculator.py, 
+    README.md, 
+    REQUIREMENTS.MD
+    sccm-4910 venv
+- Feature branch and PR: 
+    inital_setup, 
+    [text](https://github.com/Avas441/calculator/tree/initial_setup)
+- Self-review: 
+    Set up calculator dir to work on course work and introduced a intial branch called "inital_setup" to setup calcultor with lab and supplied files.
+=======
+>>>>>>> initial_setup
 - Starting commit: [hash before coursework changes]
 - Reused lab files, tests and examples: [identify and acknowledge]
 - Feature branch and PR: [name, URL and saved PR file in evidence/]
 - Self-review: [what you checked in the diff and the outcome]
+<<<<<<< HEAD
+=======
+>>>>>>> main
+>>>>>>> initial_setup
 
 ## 2. Test failure, diagnosis and fix
 
 Plan this before fixing the chosen missing requirement or defect. An initially
 missing feature is acceptable; retain the test in the final suite.
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+- Requirement and retained test: 
+    R1 - Successful calculations
+    test_calculator.py
+- Expected result and actual failure: 
+    The test will be able to confirm the calculator can take 3 arguments being a operator and 2 whole decimal numbers and will return three values of a status, calculation and error code.
+
+    Pytest Reported a assertion error across the test for add,sub,mult and division
+
+- Before/fix commits:
+    Before - commit 8c04c4a3349bc677840b0047898d52473336f0f8
+    After - 
+
+- Failing/passing local runs: 
+    Failure
+        pytest 
+        Asertion fail
+        ![alt text](R1_Test_Log_Fail.png)
+    Passing
+        pytest
+        All test passed in 0.09s
+        ![alt text](R1_Test_Log_Pass.png)
+        
+- Failing/passing CI runs: [URLs, matching commit hashes and saved files in evidence/]
+
+- CI diagnosis: [event, runner, job, failed step and useful log message]
+
+- Cause and implementation fix: 
+    Editted calculator to reurn a tuple as outlined in the project brief and updated the pytest script to assert the correct result
+=======
+>>>>>>> initial_setup
 - Requirement and retained test: [R number, test file/function]
 - Expected result and actual failure: [your explanation]
 - Before/fix commits: [hashes]
@@ -33,6 +87,10 @@ missing feature is acceptable; retain the test in the final suite.
 - Failing/passing CI runs: [URLs, matching commit hashes and saved files in evidence/]
 - CI diagnosis: [event, runner, job, failed step and useful log message]
 - Cause and implementation fix: [explain what changed and why]
+<<<<<<< HEAD
+=======
+>>>>>>> main
+>>>>>>> initial_setup
 
 ## 3. Repeatable checks and local hook
 
