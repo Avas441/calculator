@@ -22,6 +22,7 @@ submit the final CI run as a separate PDF or screenshot.
     calculator.py, 
     README.md, 
     REQUIREMENTS.MD
+    sccm-4910 venv
 - Feature branch and PR: 
     inital_setup, 
     [text](https://github.com/Avas441/calculator/tree/initial_setup)
@@ -33,12 +34,28 @@ submit the final CI run as a separate PDF or screenshot.
 Plan this before fixing the chosen missing requirement or defect. An initially
 missing feature is acceptable; retain the test in the final suite.
 
-- Requirement and retained test: [R number, test file/function]
-- Expected result and actual failure: [your explanation]
-- Before/fix commits: [hashes]
-- Failing/passing local runs: [commands, outcomes and saved log paths]
+- Requirement and retained test: 
+    R1 - Successful calculations
+    test_calculator.py
+- Expected result and actual failure: 
+    The test will be able to confirm the calculator can take 3 arguments being a operator and 2 whole decimal numbers and will return three values of a status, calculation and error code.
+
+    Pytest Reported a assertion error across the test for add,sub,mult and division
+
+- Before/fix commits:
+    Before - commit 8c04c4a3349bc677840b0047898d52473336f0f8
+    After - 
+
+- Failing/passing local runs: 
+    Failure
+        pytest 
+        Asertion fail
+        ![alt text](R1_Test_Log_Fail.png)
+        
 - Failing/passing CI runs: [URLs, matching commit hashes and saved files in evidence/]
+
 - CI diagnosis: [event, runner, job, failed step and useful log message]
+
 - Cause and implementation fix: [explain what changed and why]
 
 ## 3. Repeatable checks and local hook

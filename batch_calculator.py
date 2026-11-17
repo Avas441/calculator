@@ -4,7 +4,7 @@ Place this file beside your existing lab calculator.py. The runner and
 file handling are supplied; write your own processing logic and tests.
 """
 
-from calculator import add, subtract, multiply, divide
+from calculator import add, sub, mult, div
 
 
 def process_calculation(operation, a_text, b_text):
