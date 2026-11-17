@@ -43,7 +43,7 @@ submit the final CI run as a separate PDF or screenshot.
 
 - Before/fix commits:
     Before - commit 8c04c4a3349bc677840b0047898d52473336f0f8
-    After - 
+    After - commit c7c7885fa8f2fe2e5b8d7ab07cb9049a429f61d2
 
 - Failing/passing local runs: 
     Failure
@@ -61,6 +61,36 @@ submit the final CI run as a separate PDF or screenshot.
 
 - Cause and implementation fix: 
     Editted calculator to reurn a tuple as outlined in the project brief and updated the pytest script to assert the correct result
+---------------------------------------------------------------------------------------------------------------
+- Requirement and retained test: 
+    R2 - 
+    test_calculator.py
+- Expected result and actual failure: 
+    My expected result is that the test script for calculator will be able to handle the use case in where a invalid argument is passed and outputs a relevnt error code and status
+
+    The test reported back a failure 
+
+- Before/fix commits:
+    Before - commit ab177fed2acb0527e0daeff2cbebe15cf89ec2c5
+    After - 
+
+- Failing/passing local runs: 
+    Failure
+        pytest 
+        Asertion fail and value error
+        ![alt text](R2_Test_Log_Fail.png)
+    Passing
+        pytest
+        All test passed in 0.09s
+        ![alt text](R1_Test_Log_Pass.png)
+        
+- Failing/passing CI runs: [URLs, matching commit hashes and saved files in evidence/]
+
+- CI diagnosis: [event, runner, job, failed step and useful log message]
+
+- Cause and implementation fix: 
+    Editted calculator to reurn a tuple as outlined in the project brief and updated the pytest script to assert the correct result
+
 
 ## 3. Repeatable checks and local hook
 

@@ -2,21 +2,17 @@
 
 def add(a, b):
 	calculation = a + b
-	result = ("OK", calculation, "")
-	return result
+	return calculation
 
 def sub(a , b):
 	calculation = a - b
-	result = ("OK", calculation, "")
-	return result
+	return calculation
 
 def mult(a, b):
 	calculation = a * b
-	result = ("OK", calculation, "")
-	return result
+	return calculation
 
 def div(a, b):
 	calculation = a / b
-	result = ("OK", calculation, "")
-	return result
+	return calculation
 
