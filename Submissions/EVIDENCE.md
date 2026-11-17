@@ -51,12 +51,17 @@ missing feature is acceptable; retain the test in the final suite.
         pytest 
         Asertion fail
         ![alt text](R1_Test_Log_Fail.png)
+    Passing
+        pytest
+        All test passed in 0.09s
+        ![alt text](R1_Test_Log_Pass.png)
         
 - Failing/passing CI runs: [URLs, matching commit hashes and saved files in evidence/]
 
 - CI diagnosis: [event, runner, job, failed step and useful log message]
 
-- Cause and implementation fix: [explain what changed and why]
+- Cause and implementation fix: 
+    Editted calculator to reurn a tuple as outlined in the project brief and updated the pytest script to assert the correct result
 
 ## 3. Repeatable checks and local hook
 

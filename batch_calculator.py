@@ -8,6 +8,24 @@ from calculator import add, sub, mult, div
 
 
 def process_calculation(operation, a_text, b_text):
+
+    if operation == "+":
+        calculation = add(a_text, b_text)
+        result = ("OK", calculation, "")
+    elif operation == "-":
+        calculation = sub(a_text, b_text)
+        result = ("OK", calculation, "")
+    elif operation == "*":
+        calculation = mult(a_text, b_text)
+        result = ("OK", calculation, "")
+    elif operation == "/":
+        calculation = div(a_text, b_text)
+        result = ("OK", calculation, "")
+    else:
+        print("Sorry something went wrong")
+
+    return result
+
     """Return (status, result, error_code) for one calculation.
 
     Inputs are strings. Trim whitespace and use the four imported lab functions.
