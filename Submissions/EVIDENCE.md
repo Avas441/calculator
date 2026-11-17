@@ -72,7 +72,7 @@ submit the final CI run as a separate PDF or screenshot.
 
 - Before/fix commits:
     Before - commit ab177fed2acb0527e0daeff2cbebe15cf89ec2c5
-    After - 
+    After - commit df6ea027e2dbdc6cfe6f49957b263edd291c3606
 
 - Failing/passing local runs: 
     Failure
@@ -81,15 +81,16 @@ submit the final CI run as a separate PDF or screenshot.
         ![alt text](R2_Test_Log_Fail.png)
     Passing
         pytest
-        All test passed in 0.09s
-        ![alt text](R1_Test_Log_Pass.png)
+        All test passed in 0.01s
+        ![alt text](R2_Test_Log_Pass.png)
+
         
 - Failing/passing CI runs: [URLs, matching commit hashes and saved files in evidence/]
 
 - CI diagnosis: [event, runner, job, failed step and useful log message]
 
 - Cause and implementation fix: 
-    Editted calculator to reurn a tuple as outlined in the project brief and updated the pytest script to assert the correct result
+    Made edits to batch_calculator so that it can handle errors of either a invalid number/operation and division and return a correct status and error code. I also introduced a seperate test scropt called test_batch_calculator.py that test for these three posabilitys
 
 
 ## 3. Repeatable checks and local hook
