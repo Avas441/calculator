@@ -9,16 +9,19 @@ from calculator import add, sub, mult, div
 
 def process_calculation(operation, a_text, b_text):
 
-    if operation == "+":
+    a_text = float(a_text)
+    b_text = float(b_text)
+    result = ()
+    if operation == "add":
         calculation = add(a_text, b_text)
         result = ("OK", calculation, "")
-    elif operation == "-":
+    elif operation == "subtract":
         calculation = sub(a_text, b_text)
         result = ("OK", calculation, "")
-    elif operation == "*":
+    elif operation == "multiply":
         calculation = mult(a_text, b_text)
         result = ("OK", calculation, "")
-    elif operation == "/":
+    elif operation == "divide":
         calculation = div(a_text, b_text)
         result = ("OK", calculation, "")
     else:
