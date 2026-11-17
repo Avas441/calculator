@@ -1,0 +1,23 @@
+SCCM4910 coursework submission record
+
+Create this file outside your repository after final verification and tagging.
+Rename it SUBMISSION.txt and submit it beside the source ZIP (including .git)
+and the PDF/screenshot of the final CI run.
+Replace every bracketed prompt with your own details.
+
+Student number: [your 8-digit student number, e.g. 12345678]
+Repository URL: [your private GitHub repository; staff will not open it]
+Starting commit: [hash before coursework changes]
+Final tag: cw-v1.0
+Final commit: [full hash identified by cw-v1.0]
+Final CI-run URL: [passing run that checked out the final commit]
+Final CI-run evidence file: [name of the PDF/screenshot you submitted]
+Native test step and outcome: [step name and result in that run]
+Image-build step and outcome: [step name and result in that run]
+Container smoke-test step and outcome: [step name and result in that run]
+Image tag: [tag built from the final source]
+Image source commit: [must identify the final commit]
+Fresh-checkout commit: [must identify the final commit]
+Fresh-checkout outcome: [setup, native tests/batches, hook setup, container
+build/runs and smoke-check results; note any problems]
+Python version and Docker environment: [versions/environment used]
