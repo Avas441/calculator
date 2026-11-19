@@ -23,6 +23,9 @@ submit the final CI run as a separate PDF or screenshot.
     README.md, 
     REQUIREMENTS.MD
     sccm-4910 venv
+    requirments-dev.txt
+    ci.yml
+    test_calculator.py
 - Feature branch and PR: 
     inital_setup, 
     [text](https://github.com/Avas441/calculator/tree/initial_setup)
