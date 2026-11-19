@@ -11,15 +11,9 @@ def sub(a , b):
 	return calculation
 
 def mult(a, b):
-	calculation = a * b
+	calculation = a + b
 	return calculation
 
 def div(a, b):
 	calculation = a / b
 	return calculation
-
-def CircleArea(r):
-	if r>= 0:
-		return 3.14 * r * r
-	else:
-		return "NaN"
