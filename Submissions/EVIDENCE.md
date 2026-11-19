@@ -97,7 +97,7 @@ submit the final CI run as a separate PDF or screenshot.
     My expected result is that after pushing locally the CI will correclty report back a passed CI run
 
 - Before/fix commits:
-    Before - commit 325c8d6b5cd9ec5c4f2c4bb618e23605b73f1fbe
+    Before - commit commit 785980195ab54c5fdd25e17cd236f6e7fd9ab72f
     After - commit 325c8d6b5cd9ec5c4f2c4bb618e23605b73f1fbe
 
 - Failing/passing CI runs: 
@@ -126,18 +126,27 @@ submit the final CI run as a separate PDF or screenshot.
 
 - Before/fix commits: 
     Before commit 325c8d6b5cd9ec5c4f2c4bb618e23605b73f1fbe
-    After 
+    After commit ecb7ad64279a7595e49324308894ac1d2e172395
 
 - Failing/passing local runs: 
     Passing
         source /opt/python-venv/sccm-4910/bin/activate
         pytest
         Tests passed
-        ![alt text](R4_Test_Log_Pass.png)
+        test script - ![alt text](R4_Test_Log_Pass.png)
+        running - ![alt text](R4_Local_Running_Log_Pass.png)
         
-- Failing/passing CI runs: [URLs, matching commit hashes and saved files in evidence/]
-- CI diagnosis: [event, runner, job, failed step and useful log message]
-- Cause and implementation fix: [explain what changed and why]
+- Failing/passing CI runs: 
+    https://github.com/Avas441/calculator/actions/runs/44538045846
+   commit -  ecb7ad64279a7595e49324308894ac1d2e172395
+    ![alt text](R4_CI_Log_Pass.png)
+
+- CI diagnosis: 
+    Event: On Push request 
+    Runner: Github
+    Job: test
+    log messge: tests succeeded 6 minutes ago in 13s 
+
 ## 3. Repeatable checks and local hook
 
 - Common check script: [path and invocation used locally and in CI]
