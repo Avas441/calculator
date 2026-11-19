@@ -19,4 +19,4 @@ def test_mult():
     assert mult(2, 5) == result
 
 def test_circle_are():
-    assert CircleArea(-4) == "Error"
+    assert CircleArea(-4) == "NaN"
