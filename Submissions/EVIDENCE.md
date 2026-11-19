@@ -86,31 +86,58 @@ submit the final CI run as a separate PDF or screenshot.
         ![alt text](R2_Test_Log_Pass.png)
 
 
+
 - Cause and implementation fix: 
     Made edits to batch_calculator so that it can handle errors of either a invalid number/operation and division and return a correct status and error code. I also introduced a seperate test scropt called test_batch_calculator.py that test for these three posabilitys
-
+---------------------------------------------------------------------------------------------------------------
 - Requirement and retained test: 
-    R1.5 - Process calculation after introducing a CI workflow to automatticlly run pytest on a push and pull request
+    R2.5 - Process calculation after introducing a CI workflow to automatticlly run pytest on a push and pull request
     test_calculator.py
 - Expected result and actual failure: 
     My expected result is that after pushing locally the CI will correclty report back a passed CI run
 
-    
-
 - Before/fix commits:
-    Before - commit e9da504d897b773e40ef8691bfe0396cc834d6a5 
-    After - commit 
+    Before - commit 325c8d6b5cd9ec5c4f2c4bb618e23605b73f1fbe
+    After - commit 325c8d6b5cd9ec5c4f2c4bb618e23605b73f1fbe
 
-- Passing local runs: 
+- Failing/passing CI runs: 
+    https://github.com/Avas441/calculator/actions/runs/44533910340
+    Commit 325c8d6b5cd9ec5c4f2c4bb618e23605b73f1fbe
+    ![alt text](R2.5_Test_Log_Pass.png)
+    
+- CI diagnosis: 
+    Event: On Push request 
+    Runner: Github
+    Job: test
+    log messge: tests succeeded 6 minutes ago in 9s 
+
+---------------------------------------------------------------------------------------------------------------
+
+- Requirement and retained test: 
+    R4 - Demonstrate a working batch
+    batch_runner.py
+    data/normal.csv
+    results.csv
+    data/mixed.csv
+    mixed-results.csv
+
+- Expected result and actual failure: 
+    My expecyed result is that the batch_runner.py will properly use the supplied csv files and the batch_calculator.py, calculator.py to properly perform a correct arithmitc operation and write it to its correct result.csv file
+
+- Before/fix commits: 
+    Before commit 325c8d6b5cd9ec5c4f2c4bb618e23605b73f1fbe
+    After 
+
+- Failing/passing local runs: 
     Passing
+        source /opt/python-venv/sccm-4910/bin/activate
         pytest
-        All test passed in 0.01s
-        ![alt text](R2_Test_Log_Pass.png)
-
-
-- Cause and implementation fix: 
-    Made edits to batch_calculator so that it can handle errors of either a invalid number/operation and division and return a correct status and error code. I also introduced a seperate test scropt called test_batch_calculator.py that test for these three posabilitys
-
+        Tests passed
+        ![alt text](R4_Test_Log_Pass.png)
+        
+- Failing/passing CI runs: [URLs, matching commit hashes and saved files in evidence/]
+- CI diagnosis: [event, runner, job, failed step and useful log message]
+- Cause and implementation fix: [explain what changed and why]
 ## 3. Repeatable checks and local hook
 
 - Common check script: [path and invocation used locally and in CI]
