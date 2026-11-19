@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the code
-        uses: 3.11
+        uses: actions/checkout@4
       - name: Set up Python
         uses: actions/setup-python@v7
         with:
