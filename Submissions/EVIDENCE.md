@@ -57,17 +57,15 @@ submit the final CI run as a separate PDF or screenshot.
         pytest
         All test passed in 0.09s
         ![alt text](R1_Test_Log_Pass.png)
-        
-- Failing/passing CI runs: [URLs, matching commit hashes and saved files in evidence/]
 
-- CI diagnosis: [event, runner, job, failed step and useful log message]
 
 - Cause and implementation fix: 
     Editted calculator to reurn a tuple as outlined in the project brief and updated the pytest script to assert the correct result
 ---------------------------------------------------------------------------------------------------------------
 - Requirement and retained test: 
-    R2 - 
+    R2 - Expected Errors
     test_calculator.py
+    test_batch_calculator.py
 - Expected result and actual failure: 
     My expected result is that the test script for calculator will be able to handle the use case in where a invalid argument is passed and outputs a relevnt error code and status
 
@@ -87,14 +85,31 @@ submit the final CI run as a separate PDF or screenshot.
         All test passed in 0.01s
         ![alt text](R2_Test_Log_Pass.png)
 
-        
-- Failing/passing CI runs: [URLs, matching commit hashes and saved files in evidence/]
-
-- CI diagnosis: [event, runner, job, failed step and useful log message]
 
 - Cause and implementation fix: 
     Made edits to batch_calculator so that it can handle errors of either a invalid number/operation and division and return a correct status and error code. I also introduced a seperate test scropt called test_batch_calculator.py that test for these three posabilitys
 
+- Requirement and retained test: 
+    R1.5 - Process calculation after introducing a CI workflow to automatticlly run pytest on a push and pull request
+    test_calculator.py
+- Expected result and actual failure: 
+    My expected result is that after pushing locally the CI will correclty report back a passed CI run
+
+    
+
+- Before/fix commits:
+    Before - commit e9da504d897b773e40ef8691bfe0396cc834d6a5 
+    After - commit 
+
+- Passing local runs: 
+    Passing
+        pytest
+        All test passed in 0.01s
+        ![alt text](R2_Test_Log_Pass.png)
+
+
+- Cause and implementation fix: 
+    Made edits to batch_calculator so that it can handle errors of either a invalid number/operation and division and return a correct status and error code. I also introduced a seperate test scropt called test_batch_calculator.py that test for these three posabilitys
 
 ## 3. Repeatable checks and local hook
 

@@ -1,6 +1,5 @@
 # SCCM4910 (DevOps) lab project - A simple four operation calculator :)
 
-# THIS IS A TEST INGORE PLZ
 
 def add(a, b):
 	calculation = a + b
