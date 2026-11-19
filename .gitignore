@@ -2,4 +2,4 @@
 .env
 .venv/
 .pytest_cache/
-keep-demo.log
+
